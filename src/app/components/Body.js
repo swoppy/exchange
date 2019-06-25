@@ -271,13 +271,14 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
-        fontSize: '1vw'
+        fontFace: 'Roboto',
+        fontSize: '1em',
     },
     chartAndHistoryCon: {
         display: 'flex',
         flexDirection: 'column',
         border: '1px solid rgb(0, 0, 0)',
-        width: '60vw',
+        width: '58vw',
         backgroundColor: 'rgb(38, 45, 51)'
     },
     chartCon: {
@@ -289,16 +290,17 @@ const styles = StyleSheet.create({
     historyCon: {
         display: 'flex',
         border: '1px solid rgb(0, 0, 0)',
-        height: '23vh'
+        height: '25vh'
     },
     orderBookCon: {
         display: 'flex',
         flexDirection: 'column',
         //border: '1px solid rgb(0, 0, 0)',
         position: 'relative',
-        width: '40vw',
+        width: '42vw',
         backgroundColor: 'rgb(38, 45, 51)',
-        position: 'relative'
+        position: 'relative',
+        fontWeight: '300'
     },
     orderBookWrapper: {
         display: 'flex',
@@ -309,7 +311,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         border: '1px solid rgb(0, 0, 0)',
-        width: '35vw',
+        width: '42vw',
         position: 'relative'
     },
     orderBookHeader: {
@@ -368,7 +370,8 @@ const styles = StyleSheet.create({
     },
     total: {
         flexGrow: '1',
-        color: 'rgb(212, 212, 212)'
+        color: 'rgb(212, 212, 212)',
+        marginRight: '6px'
     },
     currentPrice: {
         display: 'flex',
@@ -390,7 +393,7 @@ const styles = StyleSheet.create({
     buyAndSellCon: {
         display: 'flex',
         border: '1px solid rgb(0, 0, 0)',
-        height: '33vh'
+        height: '36vh'
     }
     
 });

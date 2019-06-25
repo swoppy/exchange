@@ -114,16 +114,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'nowrap',
         webkitBoxPack: 'justify',
-        fontFamily: 'Helvetica Neue, Segoe UI, Roboto',
-        fontSize: '1vw',
+        fontFace: 'Roboto',
+        fontSize: '1em',
         position: 'relative',
         width: '100vw',
     },
     logoAndTime: {   
         display: 'flex',
         flexWrap: 'nowrap',
-        postion: 'absolute',
-        width: '35%',
+        postion: 'relative',
+        width: '38%',
         fontWeight: '300'
     },
     logo: {
@@ -158,9 +158,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'nowrap',
         borderRight: '1px solid rgb(0, 0, 0)',
-        fontSize: '1vw',
         postion: 'relative',
         fontWeight: '300'
+        //paddingRight: '0.1em'
     },
     lastPriceCon: {
         webkitBoxPack: 'center',
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         flexWrap: 'nowrap',
         postion: 'relative',
-        paddingRight: '10px'
+        paddingRight: '2em'
     },
     lastPrice: {
         color: 'rgb(153, 153, 153)',
@@ -186,10 +186,11 @@ const styles = StyleSheet.create({
     },
     coinSelection: {
         display: 'flex',
+        flex: '1',
         webkitBoxAlign: 'center',
         alignItems: 'center',
         color: 'rgb(255, 255, 255)',
-        fontSize: '1.2vw',
+        fontSize: '1.2em',
         webkitBoxPack: 'center',
         justifyContent: 'center',
         position: 'relative',
@@ -206,9 +207,10 @@ const styles = StyleSheet.create({
     },
     authConParent: {
         display: 'flex',
+        flex: '1',
         webkitBoxAlign: 'center',
         alignItems: 'center',
-        fontSize: '1.2vw',
+        fontSize: '1.2em',
         webkitBoxPack: 'center',
         justifyContent: 'center',
         position: 'relative',
@@ -230,19 +232,19 @@ const styles = StyleSheet.create({
         display: 'flex',
         webkitBoxAlign: 'center',
         alignItems: 'center',
-        fontSize: '1.2vw',
+        fontSize: '1.2em',
         webkitBoxPack: 'center',
         justifyContent: 'center',
         position: 'relative',
         userSelect: 'none',
         whiteSpace: 'nowrap',
-        padding: '0px 1em 0px 1em',
         flexWrap: 'nowrap',
-        postion: 'absolute'
+        postion: 'relative',
+        flex: '1',
     },
     globe: {
         padding: '0 0.5em 0 0',
-        fontSize: '1.3vw',
+        fontSize: '1.09em',
         fontWeight: 'bold'
     },
     small: {

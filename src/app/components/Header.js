@@ -109,144 +109,145 @@ const styles = StyleSheet.create({
     container: {
         display: 'flex',
         backgroundColor: 'rgb(38, 45, 51)',
-        height: '3.5em',
+        height: 'auto',
         color: 'white',
         flexDirection: 'row',
         flexWrap: 'nowrap',
-        webkitBoxPack: 'justify',
         fontFace: 'Roboto',
-        fontSize: '1em',
-        position: 'relative',
         width: '100vw',
     },
-    logoAndTime: {   
-        display: 'flex',
-        flexWrap: 'nowrap',
-        postion: 'relative',
-        width: '38%',
-        fontWeight: '300'
-    },
-    logo: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        margin: '0px 9px',
-        width: '160px',
-        verticalAlign: 'middle',
-        lineHeight: '100%',
-        postion: 'absolute'
-    },
-    logoInCon: {
-        cursor: 'pointer',
-        borderRadius: '6px',
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        webkitBoxPack: 'center',
-        justifyContent: 'center',
-        position: 'relative'
-    },
-    time: {
-        webkitBoxAlign: 'center',
-        alignItems: 'center',
-        display: 'flex',
-        flexWrap: 'wrap',
-        paddingLeft: '1.5em',
-        postion: 'absolute'
-    },
-    tradeStats: {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'nowrap',
-        borderRight: '1px solid rgb(0, 0, 0)',
-        postion: 'relative',
-        fontWeight: '300'
-        //paddingRight: '0.1em'
-    },
-    lastPriceCon: {
-        webkitBoxPack: 'center',
-        justifyContent: 'center',
-        whiteSpace: 'nowrap',
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'nowrap',
-        postion: 'relative',
-        paddingRight: '2em'
-    },
-    lastPrice: {
-        color: 'rgb(153, 153, 153)',
-        display: 'flex',
-        flexWrap: 'wrap',
-        postion: 'absolute'
-    },
-    priceInSat: {
-        whiteSpace: 'nowrap',
-        display: 'flex',
-        flexDirection: 'row',
-        postion: 'absolute',
-    },
-    coinSelection: {
-        display: 'flex',
-        flex: '1',
-        webkitBoxAlign: 'center',
-        alignItems: 'center',
-        color: 'rgb(255, 255, 255)',
-        fontSize: '1.2em',
-        webkitBoxPack: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        userSelect: 'none',
-        whiteSpace: 'nowrap',
-        padding: '0px 0.4em 0px 1em',
-        borderRight: '1px solid rgb(0, 0, 0)',
-        flexWrap: 'nowrap',
-        postion: 'absolute'
-    },
-    iconDown: {
-        padding: '0 5px 0 5px',
-        color: 'rgb(223, 173, 39)'
-    },
-    authConParent: {
-        display: 'flex',
-        flex: '1',
-        webkitBoxAlign: 'center',
-        alignItems: 'center',
-        fontSize: '1.2em',
-        webkitBoxPack: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        userSelect: 'none',
-        whiteSpace: 'nowrap',
-        padding: '0px 1em 0px 1em',
-        borderRight: '1px solid rgb(0, 0, 0)',
-        flexWrap: 'nowrap',
-        postion: 'absolute'
-    },
-    authCon: {
-        display: 'flex',
-        flexDirection: 'row',
-    },
-    inDelimeter: {
-        padding: '0px 0.5em 0px 0.5em'
-    },
-    lang: {
-        display: 'flex',
-        webkitBoxAlign: 'center',
-        alignItems: 'center',
-        fontSize: '1.2em',
-        webkitBoxPack: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        userSelect: 'none',
-        whiteSpace: 'nowrap',
-        flexWrap: 'nowrap',
-        postion: 'relative',
-        flex: '1',
-    },
-    globe: {
-        padding: '0 0.5em 0 0',
-        fontSize: '1.09em',
-        fontWeight: 'bold'
-    },
+        logoAndTime: {   
+            display: 'flex',
+            flexWrap: 'nowrap',
+            postion: 'relative',
+            fontWeight: '300',
+            flex: '4'
+        },
+            logo: {
+                display: 'flex',
+                flexWrap: 'nowrap',
+                margin: '0px 5px',
+                verticalAlign: 'middle',
+                lineHeight: '100%',
+                postion: 'relative'
+            },
+                logoInCon: {
+                    cursor: 'pointer',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    flexWrap: 'nowrap',
+                    webkitBoxPack: 'center',
+                    justifyContent: 'center',
+                    width: '10vw'
+                },
+            time: {
+                webkitBoxAlign: 'center',
+                alignItems: 'center',
+                display: 'flex',
+                flexWrap: 'nowrap',
+                padding: '0 1.5em 0 1.5em',
+                postion: 'relative',
+                whiteSpace: 'nowrap',
+                fontSize: '1vw',
+            },
+        tradeStats: {
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'nowrap',
+            borderRight: '1px solid rgb(0, 0, 0)',
+            postion: 'relative',
+            fontWeight: '300',
+            fontSize: '.8vw',
+            flex: 'auto 0 0'
+        },
+            lastPriceCon: {
+                webkitBoxPack: 'center',
+                justifyContent: 'center',
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                flexDirection: 'column',
+                flexWrap: 'nowrap',
+                paddingRight: '2em',
+
+            },
+            lastPrice: {
+                color: 'rgb(153, 153, 153)',
+                display: 'flex',
+                flexWrap: 'wrap',
+                
+            },
+            priceInSat: {
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                flexDirection: 'row',
+                
+            },
+        coinSelection: {
+            display: 'flex',
+            webkitBoxAlign: 'center',
+            alignItems: 'center',
+            color: 'rgb(255, 255, 255)',
+            fontSize: '1.2em',
+            webkitBoxPack: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            userSelect: 'none',
+            whiteSpace: 'nowrap',
+            padding: '0px 0.4em 0px 1em',
+            borderRight: '1px solid rgb(0, 0, 0)',
+            flexWrap: 'nowrap',
+            postion: 'relative',
+            fontSize: '1vw',
+            flex: 'auto 0 0'
+        },
+            iconDown: {
+                padding: '0 5px 0 5px',
+                color: 'rgb(223, 173, 39)'
+            },
+        authConParent: {
+            display: 'flex',
+            webkitBoxAlign: 'center',
+            alignItems: 'center',
+            fontSize: '1.2em',
+            webkitBoxPack: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            userSelect: 'none',
+            whiteSpace: 'nowrap',
+            padding: '0px 1em 0px 1em',
+            borderRight: '1px solid rgb(0, 0, 0)',
+            flexWrap: 'nowrap',
+            postion: 'relative',
+            flex: 'auto 0 0'
+        },
+            authCon: {
+                display: 'flex',
+                flexDirection: 'row',
+                fontSize: '1vw'
+            },
+            inDelimeter: {
+                padding: '0px 0.5em 0px 0.5em'
+            },
+        lang: {
+            display: 'flex',
+            webkitBoxAlign: 'center',
+            alignItems: 'center',
+            fontSize: '1vw',
+            webkitBoxPack: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            userSelect: 'none',
+            whiteSpace: 'nowrap',
+            flexWrap: 'nowrap',
+            postion: 'relative',
+            padding: '0px 1em 0px 1em',
+            flex: 'auto 0 0'
+        },
+            globe: {
+                padding: '0 0.5em 0 0',
+                fontSize: '1.09em',
+                fontWeight: 'bold'
+            },
     small: {
         '@media (max-width: 600px)': {
             backgroundColor: 'red',

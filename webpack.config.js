@@ -26,7 +26,7 @@ var config = {
             }
           },
           {
-            test: /\.(gif|png|jpe?g|svg)$/i,  
+            test: /\.(gif|png|jpe?g|svg|woff)$/i,  
             use: 'file-loader'
           }
         ]

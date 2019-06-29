@@ -12,7 +12,7 @@ export class Header extends React.Component {
                 <div className={css(styles.logoAndTime)}>
                     <div className={css(styles.logo)}>
                         <div className={css(styles.logoInCon)}>
-                            <img src={require('../assets/img/binance.svg')} style={img}/>
+                            <img src={require('../assets/img/logo.svg')} style={img}/>
                         </div>
                     </div>
                     <div className={css(styles.time)}>
@@ -35,7 +35,7 @@ export class Header extends React.Component {
                     </div>
                     <div className={css(styles.lastPriceCon)}>
                         <div className={css(styles.lastPrice)}>
-                            Last Price
+                            24h change
                         </div>
                         <div className={css(styles.priceInSat)}>
                             <span>
@@ -103,7 +103,7 @@ export class Header extends React.Component {
     }
 }
 const img = {
-    width: '100%', 
+    width: '100%'
 }
 const styles = StyleSheet.create({
     container: {
@@ -113,13 +113,12 @@ const styles = StyleSheet.create({
         color: 'white',
         flexDirection: 'row',
         flexWrap: 'nowrap',
-        fontFace: 'Roboto',
-        width: '100vw',
+        //fontFace: font,
+        padding: '0 0 0.2em 0'
     },
         logoAndTime: {   
             display: 'flex',
             flexWrap: 'nowrap',
-            postion: 'relative',
             fontWeight: '300',
             flex: '4'
         },
@@ -127,18 +126,18 @@ const styles = StyleSheet.create({
                 display: 'flex',
                 flexWrap: 'nowrap',
                 margin: '0px 5px',
-                verticalAlign: 'middle',
+                //verticalAlign: 'middle',
                 lineHeight: '100%',
-                postion: 'relative'
+                flex: '1',
+                
             },
                 logoInCon: {
                     cursor: 'pointer',
                     display: 'flex',
                     flexDirection: 'column',
                     flexWrap: 'nowrap',
-                    webkitBoxPack: 'center',
-                    justifyContent: 'center',
-                    width: '10vw'
+                    // webkitBoxPack: 'center',
+                    // justifyContent: 'center',
                 },
             time: {
                 webkitBoxAlign: 'center',
@@ -148,17 +147,17 @@ const styles = StyleSheet.create({
                 padding: '0 1.5em 0 1.5em',
                 postion: 'relative',
                 whiteSpace: 'nowrap',
-                fontSize: '1vw',
+                fontSize: '1.4vw',
+                flex: '2'
             },
         tradeStats: {
             display: 'flex',
             flexDirection: 'row',
             flexWrap: 'nowrap',
             borderRight: '1px solid rgb(0, 0, 0)',
-            postion: 'relative',
             fontWeight: '300',
-            fontSize: '.8vw',
-            flex: 'auto 0 0'
+            fontSize: '.85vw',
+            //flex: 'auto 0 0',
         },
             lastPriceCon: {
                 webkitBoxPack: 'center',
@@ -168,19 +167,17 @@ const styles = StyleSheet.create({
                 flexDirection: 'column',
                 flexWrap: 'nowrap',
                 paddingRight: '2em',
-
             },
             lastPrice: {
-                color: 'rgb(153, 153, 153)',
                 display: 'flex',
                 flexWrap: 'wrap',
-                
+                fontSize: '0.8em',
             },
             priceInSat: {
                 whiteSpace: 'nowrap',
                 display: 'flex',
                 flexDirection: 'row',
-                
+                fontSize: '1.2em',
             },
         coinSelection: {
             display: 'flex',

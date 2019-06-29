@@ -273,6 +273,8 @@ const styles = StyleSheet.create({
         position: 'relative',
         fontFace: 'Roboto',
         fontSize: '1em',
+        flexWrap: 'nowrap',
+        width: '100%'
     },
     chartAndHistoryCon: {
         display: 'flex',

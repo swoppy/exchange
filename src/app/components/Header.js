@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'nowrap',
         //fontFace: font,
-        padding: '0 0 0.2em 0'
+        //padding: '0 0 0.2em 0',
     },
         logoAndTime: {   
             display: 'flex',
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
                 display: 'flex',
                 flexWrap: 'nowrap',
                 margin: '0px 5px',
-                //verticalAlign: 'middle',
+                verticalAlign: 'middle',
                 lineHeight: '100%',
                 flex: '1',
                 
@@ -136,8 +136,8 @@ const styles = StyleSheet.create({
                     display: 'flex',
                     flexDirection: 'column',
                     flexWrap: 'nowrap',
-                    // webkitBoxPack: 'center',
-                    // justifyContent: 'center',
+                    webkitBoxPack: 'center',
+                    justifyContent: 'center',
                 },
             time: {
                 webkitBoxAlign: 'center',
@@ -171,7 +171,8 @@ const styles = StyleSheet.create({
             lastPrice: {
                 display: 'flex',
                 flexWrap: 'wrap',
-                fontSize: '0.8em',
+                fontSize: '0.95em',
+                color: '#999999'
             },
             priceInSat: {
                 whiteSpace: 'nowrap',
@@ -195,7 +196,7 @@ const styles = StyleSheet.create({
             flexWrap: 'nowrap',
             postion: 'relative',
             fontSize: '1vw',
-            flex: 'auto 0 0'
+            flex: 'auto 0 0',
         },
             iconDown: {
                 padding: '0 5px 0 5px',

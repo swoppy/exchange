@@ -18,7 +18,20 @@ export class Body extends React.Component {
                     <div className={css(styles.orderBookWrapper)}>
                         <div className={css(styles.orderBook)}>
                             <div className={css(styles.orderBookHeader)}>
-                                header
+                                <ul className={css(styles.ul)}>
+                                    <li>B&S</li>
+                                    <li>B</li>
+                                    <li>S</li>
+                                </ul>
+                                <div className={css(styles.decimalsCon)}>
+                                    <label>Group</label>
+                                    <select className={css(styles.select)}>
+                                        <option>2 decimals</option>
+                                        <option>4 decimals</option>
+                                        <option>5 decimals</option>
+                                        <option>7 decimals</option>
+                                    </select>
+                                </div>
                             </div>
                             <div className={css(styles.sellOrderBook)}>
                                 <div className={css(styles.sellOrderHeader)}>
@@ -253,7 +266,7 @@ export class Body extends React.Component {
                             </div>
                         </div>
                         <div className={css(styles.orderBookHistory)}>
-                            order history
+                           
                         </div>
                     </div>
                     <div className={css(styles.buyAndSellCon)}>
@@ -271,7 +284,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
-        fontFace: 'Roboto',
         fontSize: '1em',
         flexWrap: 'nowrap',
         width: '100%'
@@ -317,9 +329,30 @@ const styles = StyleSheet.create({
         position: 'relative'
     },
     orderBookHeader: {
-        width: '100%',
-        //border: '1px solid rgb(0, 0, 0)',
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'nowrap',
+        justifyContent: 'space-between',
+        flex: '0 0 auto',
+        padding: '4px'
     },
+        ul: {
+            listStyleType: 'none',
+            display: 'flex'
+        },
+        select: {
+            backgroundColor: 'rgb(47, 56, 63)',
+            cursor: 'pointer',
+            lineHeight: '100%',
+            fontSize: '1em',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: 'rgb(0, 0, 0)',
+            borderImage: 'initial',
+            margin: '0px 2px',
+            outline: '0px',
+            padding: '2px 3px !important'
+        },
     sellOrderBook: {
         display: 'flex',
         flexDirection: 'column',
@@ -329,20 +362,22 @@ const styles = StyleSheet.create({
     sellOrderHeader: {
         display: 'flex',
         flexDirection: 'row',
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#999999'
     },
-    priceHeader: {
-        flexGrow: '1'
-    },
-    amountHeader: {
-        flexGrow: '1',
-    },
-    totalHeader: {
-        flexGrow: '1',
-    },
-    mainSellOrderCon: {
-        
-    },
+        priceHeader: {
+            flexGrow: '1',
+            
+        },
+        amountHeader: {
+            flexGrow: '1',
+        },
+        totalHeader: {
+            flexGrow: '1',
+        },
+        mainSellOrderCon: {
+            
+        },
     sellOrderRowCon: {
         display: 'flex',
         flexDirection: 'row',

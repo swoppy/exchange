@@ -2,7 +2,7 @@ import React from "react"
 import { render } from "react-dom"
 
 import { Header } from "./components/head/Header"
-import { Body } from "./components/Body"
+import { Body } from "./components/body/Body"
 
 class App extends React.Component {
     render() {

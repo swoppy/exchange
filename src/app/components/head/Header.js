@@ -28,7 +28,5 @@ const styles = StyleSheet.create({
         color: 'white',
         flexDirection: 'row',
         flexWrap: 'nowrap',
-        //fontFace: font,
-        //padding: '0 0 0.2em 0',
     }
 });

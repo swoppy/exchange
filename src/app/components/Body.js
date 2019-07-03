@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
         position: 'relative',
         fontSize: '1em',
         flexWrap: 'nowrap',
-        width: '100%'
+        width: '100%',
     },
     chartAndHistoryCon: {
         display: 'flex',
@@ -329,7 +329,7 @@ const styles = StyleSheet.create({
         width: '42vw',
         backgroundColor: 'rgb(38, 45, 51)',
         position: 'relative',
-        fontWeight: '300'
+        fontWeight: '300',
     },
     orderBookWrapper: {
         display: 'flex',
@@ -400,7 +400,8 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         textAlign: 'center',
-        color: '#999999'
+        color: '#999999',
+        fontSize: '1em'
     },
         priceHeader: {
             flexGrow: '1',
@@ -419,7 +420,8 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         textAlign: 'right',
-        color: ''
+        color: '',
+        position:'relative'
     },
     buyOrderRowCon: {
         display: 'flex',

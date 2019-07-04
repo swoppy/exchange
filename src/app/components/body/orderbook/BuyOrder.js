@@ -126,7 +126,8 @@ export class BuyOrder extends React.Component {
 const styles = StyleSheet.create({
     buyOrderBook: {
         height: '27vh',
-        border: '1px solid rgb(0, 0, 0)'
+        border: '1px solid rgb(0, 0, 0)',
+        overflow: 'hidden'
     },
     buyOrderRowCon: {
         display: 'flex',

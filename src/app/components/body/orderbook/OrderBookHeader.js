@@ -84,6 +84,9 @@ const styles = StyleSheet.create({
             margin: '0px 2px',
             outline: '0px',
             padding: '2px 3px !important',
-            color: '#999999'
+            color: 'inherit'
         },
+        decimalsCon: {
+            color: '#999999'
+        }
 });

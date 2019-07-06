@@ -35,8 +35,7 @@ const styles = StyleSheet.create({
         width: '42vw',
         backgroundColor: 'rgb(38, 45, 51)',
         position: 'relative',
-        fontWeight: '300',
-        height: 'auto'
+        height: 'auto',
     },
     orderBookWrapper: {
         display: 'flex',

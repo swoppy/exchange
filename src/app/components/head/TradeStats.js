@@ -13,7 +13,7 @@ export class TradeStats extends React.Component {
                         <span>
                             0.000003253 &nbsp;
                         </span>
-                        <span>
+                        <span className={css(styles.priceInCurrentCoin)}>
                             $0.523
                         </span>
                     </div>
@@ -26,7 +26,7 @@ export class TradeStats extends React.Component {
                         <span>
                             0.000003253 &nbsp;
                         </span>
-                        <span>
+                        <span className={css(styles.priceInCurrentCoin)}>
                             $0.523
                         </span>
                     </div>
@@ -96,5 +96,11 @@ const styles = StyleSheet.create({
             display: 'flex',
             flexDirection: 'row',
             fontSize: '1.2em',
+        },
+        priceInCurrentCoin: {
+            display: 'flex',
+            alignSelf: 'flex-end',
+            color: 'rgb(245, 188, 0)',
+            fontSize: '.8em'
         }
-})
+});

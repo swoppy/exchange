@@ -33,8 +33,7 @@ export class BuyOrder extends React.Component {
 const styles = StyleSheet.create({
     buyOrderBook: {
         height: '27vh',
-        
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
 
 });

@@ -9,7 +9,7 @@ export class CurrentPrice extends React.Component {
             <div className={css(styles.currentPrice)}>
                 <div className={css(styles.price)}>
                         <span className={css(styles.inCrypto)}>
-                            10000.93225
+                            10187.93225
                         </span>
                         <span className={css(styles.priceMovementIcon)}>
                             <FontAwesomeIcon icon={faLongArrowAltDown} />
@@ -42,17 +42,21 @@ const styles = StyleSheet.create({
         },
             inCrypto: {
                 display: 'flex',
-                fontSize: '1.2em',
+                fontSize: '1.5em',
+                color: 'rgb(255, 0, 122)'
             },
             inFiat: {
                 display: 'flex',
                 paddingLeft: '5px',
                 fontSize: '1em',
-                alignSelf: 'center'
+                alignSelf: 'center',
+                color: 'rgb(245, 188, 0)'
             },
             priceMovementIcon: {
                 marginLeft: '2px',
-                alignSelf: 'flex-end'
+                alignSelf: 'flex-end',
+                color: 'rgb(255, 0, 122)',
+                fontSize: '1.5em',
             },
         signalIcon: {
             alignSelf: 'center',

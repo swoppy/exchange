@@ -5,7 +5,7 @@ import { OrderBookHeader } from './OrderBookHeader'
 import { SellOrder } from './SellOrder'
 import { CurrentPrice } from './CurrentPrice'
 import { BuyOrder } from './BuyOrder'
-import { OrderBookHistory } from './OrderBookHistory'
+import { OrderBookHistory } from './orderbookhistory/orderBookHistory'
 
 export class OrderBook extends React.Component {
     render () {

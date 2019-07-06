@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
         height: 'auto',
         border: '.5px solid rgb(0, 0, 0)',
         padding: '2px 5px',
+        backgroundColor: 'rgb(32, 38, 43)'
     },
         price: {
             display: 'flex',

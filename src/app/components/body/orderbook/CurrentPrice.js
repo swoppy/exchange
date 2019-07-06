@@ -1,27 +1,26 @@
 import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltDown, faLongArrowAltUp, faSignal } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltDown, faLongArrowAltUp, faSignal, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 
 export class CurrentPrice extends React.Component {
     render () {
         return (
             <div className={css(styles.currentPrice)}>
                 <div className={css(styles.price)}>
-                        <div className={css(styles.inCrypto)}>
+                        <span className={css(styles.inCrypto)}>
                             10000.93225
-                            <span className={css(styles.priceMovementIcon)}>
-                                <FontAwesomeIcon icon={faLongArrowAltDown} />
-                            </span>
-                        </div>
-                        <div className={css(styles.inFiat)}>
+                        </span>
+                        <span className={css(styles.priceMovementIcon)}>
+                            <FontAwesomeIcon icon={faLongArrowAltDown} />
+                        </span>
+                        <span className={css(styles.inFiat)}>
                             $11,000
-                        </div>
-                        {/* <div className={css(styles.signalIcon)}> */}
-                            <FontAwesomeIcon className={css(styles.signalIcon)} icon={faSignal} />
-                        {/* </div> */}
+                        </span>      
                 </div>
-                
+                <span className={css(styles.signalIcon)}>
+                    <FontAwesomeIcon icon={faSignal} />
+                </span>
             </div>
         )
     }
@@ -29,19 +28,21 @@ export class CurrentPrice extends React.Component {
 const styles = StyleSheet.create({
     currentPrice: {
         display: 'flex',
-        webkitBoxAlign: 'center',
-        justifyContent: 'center',
-        width: '100%',
+        flexDirection: 'row',
+        width: '1w',
         height: 'auto',
         border: '1px solid rgb(0, 0, 0)',
-        padding: '2px 0',
+        padding: '2px 5px',
     },
         price: {
             display: 'flex',
-            flexDirection: 'row', 
+            flex: '1',
+            flexDirection: 'row',
+            justifyContent: 'center'
         },
             inCrypto: {
-                fontSize: '1.2em'
+                display: 'flex',
+                fontSize: '1.2em',
             },
             inFiat: {
                 display: 'flex',
@@ -50,9 +51,10 @@ const styles = StyleSheet.create({
                 alignSelf: 'flex-end'
             },
             priceMovementIcon: {
-                marginLeft: '2px'
+                marginLeft: '2px',
+                alignSelf: 'flex-end'
             },
-            signalIcon: {
-                alignSelf: 'center'
-            }   
+        signalIcon: {
+            alignSelf: 'center',
+        }   
 });

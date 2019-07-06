@@ -8,19 +8,19 @@ export class OrderBookHeader extends React.Component {
                 <ul className={css(styles.ul)}>
                     <li className={css(styles.li)}>
                         <input type='image'
-                                src={require('../../../assets/img/b&s.svg')}
+                                src={require('../../../../assets/img/b&s.svg')}
                                 className={css(styles.buySellLogo)}
                         />
                     </li>
                     <li className={css(styles.li)}>
                         <input type='image'
-                                src={require('../../../assets/img/buy.svg')}
+                                src={require('../../../../assets/img/buy.svg')}
                                 className={css(styles.buySellLogo)}
                         />
                     </li>
                     <li className={css(styles.li)}>
                     <input type='image'
-                                src={require('../../../assets/img/sell.svg')}
+                                src={require('../../../../assets/img/sell.svg')}
                                 className={css(styles.buySellLogo)}
                         />
                     </li>

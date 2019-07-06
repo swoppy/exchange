@@ -10,6 +10,35 @@ export class OrderBookHistory extends React.Component {
                 <Row />
                 <Row />
                 <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
          </div>
         )
     }
@@ -21,6 +50,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         border: '1px solid #111',
         width: '100%',
-        overflow: 'hidden auto'
+        overflow: 'hidden auto',
+        position: 'relative',
+        willChange: 'transform'
     }
 });

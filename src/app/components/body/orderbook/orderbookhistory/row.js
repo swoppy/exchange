@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
         priceInStableCoin: {
             display: 'flex',
             flex: '0 1 1000px',
-            fontSize: '1em'
+            fontSize: '1em',
+            color: 'rgb(112, 168, 0)'
         },
         priceInCurrentCoin: {
             display: 'flex',
@@ -46,6 +47,8 @@ const styles = StyleSheet.create({
             display: 'flex',
             flex: '0 1 1000px',
             justifyContent: 'flex-end',
-            fontSize: '1em'
+            fontSize: '1em',
+            color: '#999999',
+            marginRight: '5px'
         }
 })

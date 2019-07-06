@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     orderBookCon: {
         display: 'flex',
         flexDirection: 'column',
-        //border: '1px solid rgb(0, 0, 0)',
         position: 'relative',
         width: '42vw',
         backgroundColor: 'rgb(38, 45, 51)',

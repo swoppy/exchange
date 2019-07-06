@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         padding: '4px 4px 0px 4px',
         backgroundColor: 'rgb(32, 38, 43)'
-        //border: '.5px solid white',
     },
         ul: {
             listStyleType: 'none',

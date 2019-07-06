@@ -7,13 +7,35 @@ export class OrderBookHistory extends React.Component {
             <div className={css(styles.orderBookHistory)}>
                 <div className={css(styles.orderBookHistoryRow)}>
                     <div className={css(styles.priceInStableCoin)}>
-
+                        11,390
                     </div>
                     <div className={css(styles.priceInCurrentCoin)}>
-
+                        0.00189873
                     </div>
                     <div className={css(styles.timeOrderExecuted)}>
-                        
+                        17:20:11
+                    </div>
+                </div>
+                <div className={css(styles.orderBookHistoryRow)}>
+                    <div className={css(styles.priceInStableCoin)}>
+                        11,390
+                    </div>
+                    <div className={css(styles.priceInCurrentCoin)}>
+                        0.00189873
+                    </div>
+                    <div className={css(styles.timeOrderExecuted)}>
+                        17:20:11
+                    </div>
+                </div>
+                <div className={css(styles.orderBookHistoryRow)}>
+                    <div className={css(styles.priceInStableCoin)}>
+                        11,390
+                    </div>
+                    <div className={css(styles.priceInCurrentCoin)}>
+                        0.00189873
+                    </div>
+                    <div className={css(styles.timeOrderExecuted)}>
+                        17:20:11
                     </div>
                 </div>
          </div>
@@ -23,7 +45,38 @@ export class OrderBookHistory extends React.Component {
 
 const styles = StyleSheet.create({
     orderBookHistory: {
+        display: 'flex',
+        flexDirection: 'column',
         border: '1px solid #111',
-        width: '100%'
-    }
+        width: '100%',
+        overflow: 'hidden auto'
+    },
+        orderBookHistoryRow: {
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'nowrap',
+            whiteSpace: 'nowrap',
+            position: 'relative',
+            width: '100%',
+            height: '18px',
+            padding: '2px 2px 2px 2px',
+            
+        },
+            priceInStableCoin: {
+                display: 'flex',
+                flex: '0 1 1000px',
+                fontSize: '1em'
+            },
+            priceInCurrentCoin: {
+                display: 'flex',
+                flex: '0 1 1000px',
+                justifyContent: 'flex-end',
+                fontSize: '1em'
+            },
+            timeOrderExecuted: {
+                display: 'flex',
+                flex: '0 1 1000px',
+                justifyContent: 'flex-end',
+                fontSize: '1em'
+            }
 });

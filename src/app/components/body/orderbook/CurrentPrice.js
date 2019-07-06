@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
                 display: 'flex',
                 paddingLeft: '5px',
                 fontSize: '1em',
-                alignSelf: 'flex-end'
+                alignSelf: 'center'
             },
             priceMovementIcon: {
                 marginLeft: '2px',

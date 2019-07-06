@@ -6,19 +6,19 @@ export class OrderBookHeader extends React.Component {
         return (
             <div className={css(styles.orderBookHeader)}>
                 <ul className={css(styles.ul)}>
-                    <li>
+                    <li className={css(styles.li)}>
                         <input type='image'
                                 src={require('../../../assets/img/b&s.svg')}
                                 className={css(styles.buySellLogo)}
                         />
                     </li>
-                    <li>
+                    <li className={css(styles.li)}>
                         <input type='image'
                                 src={require('../../../assets/img/buy.svg')}
                                 className={css(styles.buySellLogo)}
                         />
                     </li>
-                    <li>
+                    <li className={css(styles.li)}>
                     <input type='image'
                                 src={require('../../../assets/img/sell.svg')}
                                 className={css(styles.buySellLogo)}
@@ -45,20 +45,23 @@ const styles = StyleSheet.create({
         flexWrap: 'nowrap',
         whiteSpace: 'nowrap',
         justifyContent: 'space-between',
-        flex: '0 0 auto',
-        padding: '4px'
+        padding: '4px 4px 0px 4px',
+        backgroundColor: 'rgb(32, 38, 43)'
+        //border: '.5px solid white',
     },
         ul: {
             listStyleType: 'none',
             display: 'flex',
             margin: '0',
-            padding: '0'
+            padding: '0',
+            justifyContent: 'flex-start'
+        },
+        li: {
+            paddingRight: '2px'
         },
             buySellLogo: {
                 width: '30px',
-                height: '22px',
-                //backgroundColor: 'rgb(47, 56, 63)',
-                //color: 'rgb(245, 188, 0)',
+                height: '20px',
                 cursor: 'pointer',
                 lineHeight: '100%',
                 fontSize: '12px',
@@ -67,7 +70,7 @@ const styles = StyleSheet.create({
                 borderImage: 'initial',
                 outline: '0px',
                 margin: '0px !important',
-                padding: '0.1em !important',
+                //padding: '0.1em !important',
                 ':active': {
                     borderColor: 'rgb(240, 185, 11)'
                 }
@@ -80,13 +83,17 @@ const styles = StyleSheet.create({
             borderWidth: '1px',
             borderStyle: 'solid',
             borderColor: 'rgb(0, 0, 0)',
-            borderImage: 'initial',
-            margin: '0px 2px',
+            marginLeft: '3px',
             outline: '0px',
-            padding: '2px 3px !important',
             color: 'inherit'
         },
         decimalsCon: {
+            display: 'flex',
+            justifyContent: 'flex-end',
+            alignSelf: 'flex-start',
+            flexWrap: 'nowrap',
+            flexBasis: '100%',
+            height: 'auto',
             color: '#999999'
         }
 });

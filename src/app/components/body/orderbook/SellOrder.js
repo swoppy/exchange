@@ -127,14 +127,16 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         width: '100%',
         height: '27vh',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        
     },
     sellOrderHeader: {
         display: 'flex',
         flexDirection: 'row',
         textAlign: 'center',
         color: '#999999',
-        fontSize: '1em'
+        fontSize: '1em',
+        
     },
         priceHeader: {
             flexGrow: '1',
@@ -147,7 +149,7 @@ const styles = StyleSheet.create({
             flexGrow: '1',
         },
         mainSellOrderCon: {
-            
+           
         },
     sellOrderRowCon: {
         display: 'flex',

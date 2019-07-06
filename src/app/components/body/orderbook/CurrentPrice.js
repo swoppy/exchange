@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '1w',
         height: 'auto',
-        border: '1px solid rgb(0, 0, 0)',
+        border: '.5px solid rgb(0, 0, 0)',
         padding: '2px 5px',
     },
         price: {

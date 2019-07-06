@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
             padding: '0 1.5em 0 1.5em',
             postion: 'relative',
             whiteSpace: 'nowrap',
-            fontSize: '1.4vw',
+            fontSize: '1.2vw',
             flex: '2'
         }
 })

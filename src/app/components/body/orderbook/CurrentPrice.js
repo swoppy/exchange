@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '1w',
         height: 'auto',
-        border: '.5px solid rgb(0, 0, 0)',
         padding: '2px 5px',
         backgroundColor: 'rgb(32, 38, 43)'
     },

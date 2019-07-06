@@ -5,6 +5,7 @@ import { OrderBookHeader } from './OrderBookHeader'
 import { SellOrder } from './SellOrder'
 import { CurrentPrice } from './CurrentPrice'
 import { BuyOrder } from './BuyOrder'
+import { OrderBookHistory } from './OrderBookHistory'
 
 export class OrderBook extends React.Component {
     render () {
@@ -17,9 +18,7 @@ export class OrderBook extends React.Component {
                         <CurrentPrice />
                         <BuyOrder />
                 </div>
-                <div className={css(styles.orderBookHistory)}>
-                   
-                </div>
+                <OrderBookHistory />
             </div>
             <div className={css(styles.buyAndSellCon)}>
                 buy and sell container
@@ -51,11 +50,6 @@ const styles = StyleSheet.create({
         border: '1px solid rgb(0, 0, 0)',
         width: '42vw',
         position: 'relative'
-    },
-    
-    orderBookHistory: {
-        border: '1px solid #111',
-        width: '100%'
     },
     buyAndSellCon: {
         display: 'flex',

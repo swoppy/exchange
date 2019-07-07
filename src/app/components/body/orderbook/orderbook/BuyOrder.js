@@ -24,6 +24,18 @@ export class BuyOrder extends React.Component {
                     <BuyOrderRow />
                     <BuyOrderRow />
                     <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />
+                    <BuyOrderRow />x
                 </div>
             </div>
         )

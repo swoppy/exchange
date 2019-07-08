@@ -1,13 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 
 export function OrderBookHeader () {
+    const [logo, setBuyAndSellLogo] = useState([
+        {
+            source: require('../../../../assets/img/b&s.svg'),
+            isToggled: false
+        },
+        {
+            source: require('../../../../assets/img/buy.svg'),
+            isToggled: false
+        },
+        {
+            source: require('../../../../assets/img/sell.svg'),
+            isToggled: false
+        }
+
+    ])
+    //console.log();
     return (
         <div className={css(styles.orderBookHeader)}>
             <ul className={css(styles.ul)}>
+
                 <li className={css(styles.li)}>
                     <input  type='image'
-                            src={require('../../../../assets/img/b&s.svg')}
+                            src={logo[0].source}
                             className={css(styles.buySellLogo)}
                             //onClick={this.buyAndSell}
                     />
@@ -15,13 +32,13 @@ export function OrderBookHeader () {
                 <li className={css(styles.li)}>
                     <input id='buy'
                         type='image'
-                        src={require('../../../../assets/img/buy.svg')}
+                        src={logo[1].source}
                         className={css(styles.buySellLogo)}
                     />
                 </li>
                 <li className={css(styles.li)}>
                 <input type='image'
-                        src={require('../../../../assets/img/sell.svg')}
+                        src={logo[2].source}
                         className={css(styles.buySellLogo)}
                     />
                 </li>

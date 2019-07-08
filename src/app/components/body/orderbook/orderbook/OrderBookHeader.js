@@ -1,55 +1,42 @@
 import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 
-export class OrderBookHeader extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {isToggleOn: true};
-
-        this.buyAndSell = this.buyAndSell.bind(this);
-    }
-    buyAndSell() {
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }));
-    }
-    render () {
-        return (
-            <div className={css(styles.orderBookHeader)}>
-                <ul className={css(styles.ul)}>
-                    <li className={css(styles.li)}>
-                        <input  type='image'
-                                src={require('../../../../assets/img/b&s.svg')}
-                                className={css(styles.buySellLogo)}
-                                onClick={this.buyAndSell}
-                        />
-                    </li>
-                    <li className={css(styles.li)}>
-                        <input id='buy'
-                            type='image'
-                            src={require('../../../../assets/img/buy.svg')}
+export function OrderBookHeader () {
+    return (
+        <div className={css(styles.orderBookHeader)}>
+            <ul className={css(styles.ul)}>
+                <li className={css(styles.li)}>
+                    <input  type='image'
+                            src={require('../../../../assets/img/b&s.svg')}
                             className={css(styles.buySellLogo)}
-                        />
-                    </li>
-                    <li className={css(styles.li)}>
-                    <input type='image'
-                            src={require('../../../../assets/img/sell.svg')}
-                            className={css(styles.buySellLogo)}
-                        />
-                    </li>
-                </ul>
-                <div className={css(styles.decimalsCon)}>
-                    <label>groups</label>
-                    <select className={css(styles.select)}>
-                        <option>2 decimals</option>
-                        <option>4 decimals</option>
-                        <option>5 decimals</option>
-                        <option>7 decimals</option>
-                    </select>
-                </div>
+                            //onClick={this.buyAndSell}
+                    />
+                </li>
+                <li className={css(styles.li)}>
+                    <input id='buy'
+                        type='image'
+                        src={require('../../../../assets/img/buy.svg')}
+                        className={css(styles.buySellLogo)}
+                    />
+                </li>
+                <li className={css(styles.li)}>
+                <input type='image'
+                        src={require('../../../../assets/img/sell.svg')}
+                        className={css(styles.buySellLogo)}
+                    />
+                </li>
+            </ul>
+            <div className={css(styles.decimalsCon)}>
+                <label>groups</label>
+                <select className={css(styles.select)}>
+                    <option>2 decimals</option>
+                    <option>4 decimals</option>
+                    <option>5 decimals</option>
+                    <option>7 decimals</option>
+                </select>
             </div>
+        </div>
         )
-    }
 }
 const styles = StyleSheet.create({
     orderBookHeader: {

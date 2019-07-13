@@ -8,15 +8,30 @@ import { BuyOrder } from './orderbook/BuyOrder'
 import { OrderBookHistory } from './orderbookhistory/orderBookHistory'
 
 export class OrderBook extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            currentOrderType: 'BS'
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick = e => {
+        this.setState({
+            currentOrderType: e.target.value
+        });
+    }
     render () {
+        console.log(this.state.currentOrderType);
         return (
             <div className={css(styles.orderBookCon)}>
                 <div className={css(styles.orderBookWrapper)}>
                     <div className={css(styles.orderBook)}>
-                        <OrderBookHeader />
-                        <SellOrder />
+                        <OrderBookHeader handleClick={this.handleClick}
+                                         currentOrderType={this.state.currentOrderType}
+                        />
+                        { this.state.currentOrderType == "B" ? '' : <SellOrder /> }
                         <CurrentPrice />
-                        <BuyOrder />
+                        { this.state.currentOrderType == "S" ? '' : <BuyOrder /> }
                 </div>
                 <OrderBookHistory />
             </div>
@@ -26,6 +41,7 @@ export class OrderBook extends React.Component {
         </div>
         )
     }
+    
 }
 const styles = StyleSheet.create({
     orderBookCon: {

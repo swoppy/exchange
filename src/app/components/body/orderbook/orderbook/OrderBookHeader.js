@@ -3,6 +3,7 @@ import { StyleSheet, css } from 'aphrodite/no-important'
 
 export class OrderBookHeader extends React.Component {
     render(){
+        //console.log(this.props.currentOrderType);
         return (
             <div className={css(styles.orderBookHeader)}>
                 <ul className={css(styles.ul)}>
@@ -11,7 +12,8 @@ export class OrderBookHeader extends React.Component {
                         <input  type='image'
                                 src={require('../../../../assets/img/b&s.svg')}
                                 className={css(styles.buySellLogo)}
-                                //onClick={this.buyAndSell}
+                                onClick={this.props.handleClick}
+                                value="BS"
                         />
                     </li>
                     <li className={css(styles.li)}>
@@ -19,12 +21,16 @@ export class OrderBookHeader extends React.Component {
                             type='image'
                             src={require('../../../../assets/img/sell.svg')}
                             className={css(styles.buySellLogo)}
+                            onClick={this.props.handleClick}
+                            value="S"
                         />
                     </li>
                     <li className={css(styles.li)}>
                     <input type='image'
                             src={require('../../../../assets/img/buy.svg')}
                             className={css(styles.buySellLogo)}
+                            onClick={this.props.handleClick}
+                            value="B"
                         />
                     </li>
                 </ul>
@@ -39,7 +45,9 @@ export class OrderBookHeader extends React.Component {
                 </div>
             </div>
         )
+        
     }
+    
 }
 const styles = StyleSheet.create({
     orderBookHeader: {

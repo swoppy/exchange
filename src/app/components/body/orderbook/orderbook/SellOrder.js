@@ -6,7 +6,8 @@ import { SellOrderRow } from './SellOrderRow'
 export class SellOrder extends React.Component {
     render () {
         return (
-            <div className={css(styles.sellOrderBook)}>
+            <div className={css(styles.sellOrderBook)}
+                 onClick={this.handleClick}>
             <div className={css(styles.sellOrderHeader)}>
                 <div className={css(styles.priceHeader)}>
                     Price

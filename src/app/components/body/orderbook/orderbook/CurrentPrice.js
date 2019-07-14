@@ -5,8 +5,19 @@ import { faLongArrowAltDown, faLongArrowAltUp, faSignal, faLongArrowAltLeft } fr
 
 export class CurrentPrice extends React.Component {
     render () {
+        let dynamicStyle = StyleSheet.create({
+            currentPrice: {
+                display: 'flex',
+                flexDirection: 'row',
+                width: '1w',
+                height: 'auto',
+                padding: '2px 5px',
+                backgroundColor: 'rgb(32, 38, 43)',
+                marginTop: this.props.currentPriceMarginPos
+            }
+        });
         return (
-            <div className={css(styles.currentPrice)}>
+            <div className={css(dynamicStyle.currentPrice)}>
                 <div className={css(styles.price)}>
                         <span className={css(styles.inCrypto)}>
                             10187.93225
@@ -25,15 +36,7 @@ export class CurrentPrice extends React.Component {
         )
     }
 }
-const styles = StyleSheet.create({
-    currentPrice: {
-        display: 'flex',
-        flexDirection: 'row',
-        width: '1w',
-        height: 'auto',
-        padding: '2px 5px',
-        backgroundColor: 'rgb(32, 38, 43)'
-    },
+const styles = StyleSheet.create({   
         price: {
             display: 'flex',
             flex: '1',

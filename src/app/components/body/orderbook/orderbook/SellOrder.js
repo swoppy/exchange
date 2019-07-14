@@ -5,8 +5,17 @@ import { SellOrderRow } from './SellOrderRow'
 
 export class SellOrder extends React.Component {
     render () {
+        let dynamicStyles = StyleSheet.create({
+            sellOrderBook: {
+                display: 'flex',
+                flexDirection: 'column',
+                width: '100%',
+                height: this.props.orderComponentHeight,
+                overflow: 'hidden',
+            },
+        });
         return (
-            <div className={css(styles.sellOrderBook)}
+            <div className={css(dynamicStyles.sellOrderBook)}
                  onClick={this.handleClick}>
             <div className={css(styles.sellOrderHeader)}>
                 <div className={css(styles.priceHeader)}>
@@ -34,20 +43,25 @@ export class SellOrder extends React.Component {
                 <SellOrderRow />
                 <SellOrderRow />
                 <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
+                <SellOrderRow />
             </div>
         </div>
         )
     }
 }
 const styles = StyleSheet.create({
-    sellOrderBook: {
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        height: '27vh',
-        overflow: 'hidden',
-        
-    },
     sellOrderHeader: {
         display: 'flex',
         flexDirection: 'row',

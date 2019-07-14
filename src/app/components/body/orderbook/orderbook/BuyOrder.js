@@ -5,6 +5,13 @@ import { BuyOrderRow } from './BuyOrderRow'
 
 export class BuyOrder extends React.Component {
     render () {
+        let styles = StyleSheet.create({
+            buyOrderBook: {
+                height: this.props.orderComponentHeight,
+                overflow: 'hidden',
+            },
+        
+        });
         return (
             <div className={css(styles.buyOrderBook)}>
                 <div className={css(styles.mainBuyOrderCon)}>
@@ -35,17 +42,9 @@ export class BuyOrder extends React.Component {
                     <BuyOrderRow />
                     <BuyOrderRow />
                     <BuyOrderRow />
-                    <BuyOrderRow />x
+                    <BuyOrderRow />
                 </div>
             </div>
         )
     }
 }
-
-const styles = StyleSheet.create({
-    buyOrderBook: {
-        height: '27vh',
-        overflow: 'hidden',
-    },
-
-});

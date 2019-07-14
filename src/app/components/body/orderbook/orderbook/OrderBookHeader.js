@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
             display: 'flex',
             margin: '0',
             padding: '0',
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
         },
         li: {
             paddingRight: '2px'
@@ -80,8 +80,7 @@ const styles = StyleSheet.create({
                 borderImage: 'initial',
                 outline: '0px',
                 margin: '0px !important',
-                //padding: '0.1em !important',
-                ':active': {
+                ':focus': {
                     borderColor: 'rgb(240, 185, 11)'
                 }
             },

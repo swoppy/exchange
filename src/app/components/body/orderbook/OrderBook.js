@@ -6,6 +6,7 @@ import { SellOrder } from './orderbook/SellOrder'
 import { CurrentPrice } from './orderbook/CurrentPrice'
 import { BuyOrder } from './orderbook/BuyOrder'
 import { OrderBookHistory } from './orderbookhistory/orderBookHistory'
+import { BuyAndSell } from  './buyandsell/BuyAndSell'
 
 export class OrderBook extends React.Component {
     constructor(props){
@@ -45,7 +46,7 @@ export class OrderBook extends React.Component {
         });
     }
     render () {
-        console.log(this.state.orderComponentHeight);
+        //console.log(this.state.orderComponentHeight);
         return (
             <div className={css(styles.orderBookCon)}>
                 <div className={css(styles.orderBookWrapper)}>
@@ -67,9 +68,7 @@ export class OrderBook extends React.Component {
                 </div>
                 <OrderBookHistory />
             </div>
-            <div className={css(styles.buyAndSellCon)}>
-                buy and sell container
-            </div>
+            <BuyAndSell />
         </div>
         )
     }
@@ -96,10 +95,5 @@ const styles = StyleSheet.create({
         border: '1px solid rgb(0, 0, 0)',
         width: '42vw',
         position: 'relative'
-    },
-    buyAndSellCon: {
-        display: 'flex',
-        border: '1px solid rgb(0, 0, 0)',
-        height: '36vh'
     }
 });

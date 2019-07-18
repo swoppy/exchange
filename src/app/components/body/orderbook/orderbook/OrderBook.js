@@ -1,12 +1,12 @@
 import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 
-import { OrderBookHeader } from './orderbook/OrderBookHeader'
-import { SellOrder } from './orderbook/SellOrder'
-import { CurrentPrice } from './orderbook/CurrentPrice'
-import { BuyOrder } from './orderbook/BuyOrder'
-import { OrderBookHistory } from './orderbookhistory/orderBookHistory'
-import { BuyAndSell } from  './buyandsell/BuyAndSell'
+import { OrderBookHeader } from './OrderBookHeader'
+import { SellOrder } from './SellOrder'
+import { CurrentPrice } from './CurrentPrice'
+import { BuyOrder } from './BuyOrder'
+import { OrderBookHistory } from '../orderbookhistory/orderBookHistory'
+import { BuyAndSell } from  '../buyandsell/BuyAndSell'
 
 export class OrderBook extends React.Component {
     constructor(props){

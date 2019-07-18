@@ -1,7 +1,7 @@
 import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 
-import { OrderBook } from './orderbook/OrderBook'
+import { OrderBook } from './orderbook/orderbook/OrderBook'
 
 export class Body extends React.Component {
     render () {

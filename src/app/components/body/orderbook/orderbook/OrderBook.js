@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
-        width: '42vw',
+        width: '50vw',
         backgroundColor: 'rgb(38, 45, 51)',
         position: 'relative',
         height: 'auto',

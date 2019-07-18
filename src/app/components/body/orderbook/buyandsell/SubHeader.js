@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
             display: 'flex',
             paddingLeft: '10px',
             paddingTop: '8px',
-            paddingBottom: '10px',
+            paddingBottom: '5px',
             backgroundColor: 'rgb(32, 38, 43)',
             color: 'rgb(212, 212, 212)',
             width: '100%',

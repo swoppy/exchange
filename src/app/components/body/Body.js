@@ -47,7 +47,8 @@ const styles = StyleSheet.create({
         historyCon: {
             display: 'flex',
             border: '1px solid rgb(0, 0, 0)',
-            flex: '3'
+            flex: '3',
+            height: '100%'
         },
         
     

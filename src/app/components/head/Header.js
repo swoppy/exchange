@@ -10,7 +10,7 @@ import { Language } from './Language'
 export class Header extends React.Component {
     render () {
         return (
-            <div className={css(styles.container)}>
+            <div className={css(styles.container, styles.belowTablet)}>
                 <LogoAndTime />
                 <TradeStats />
                 <CoinSelection />
@@ -24,9 +24,10 @@ const styles = StyleSheet.create({
     container: {
         display: 'flex',
         backgroundColor: 'rgb(38, 45, 51)',
-        height: 'auto',
+        // height: 'auto',
         color: 'white',
         flexDirection: 'row',
         flexWrap: 'nowrap',
+        //flex: '1'
     }
 });

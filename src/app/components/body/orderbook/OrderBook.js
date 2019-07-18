@@ -54,26 +54,25 @@ export class OrderBook extends React.Component {
                         <OrderBookHeader handleClick={this.handleClick}/>
                         { this.state.currentOrderType == "B" 
                             ? '' 
-                            : <SellOrder orderComponentHeight={this.state.orderComponentHeight}
-                                          /> 
+                            : <SellOrder orderComponentHeight={this.state.orderComponentHeight} /> 
                         }
 
-                        <CurrentPrice currentPriceMarginPos={this.state.currentPriceMarginPos}/>
+                        <CurrentPrice currentPriceMarginPos={this.state.currentPriceMarginPos} />
 
                         { this.state.currentOrderType == "S" 
                             ? '' 
-                            : <BuyOrder orderComponentHeight={this.state.orderComponentHeight}
-                                         /> 
+                            : <BuyOrder orderComponentHeight={this.state.orderComponentHeight} /> 
                         }
-                </div>
-                <OrderBookHistory />
+                    </div>
+                    <OrderBookHistory />
+                 </div>
+                <BuyAndSell />
             </div>
-            <BuyAndSell />
-        </div>
         )
     }
     
 }
+
 const styles = StyleSheet.create({
     orderBookCon: {
         display: 'flex',

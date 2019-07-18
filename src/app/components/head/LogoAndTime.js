@@ -23,6 +23,7 @@ const img = {
 const styles = StyleSheet.create({
     logoAndTime: {   
         display: 'flex',
+        flexDirection: 'row',
         flexWrap: 'nowrap',
         fontWeight: '300',
         flex: '4'
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
             display: 'flex',
             flexWrap: 'nowrap',
             padding: '0 1.5em 0 1.5em',
-            postion: 'relative',
+            // postion: 'relative',
             whiteSpace: 'nowrap',
             fontSize: '1.2vw',
             flex: '2'

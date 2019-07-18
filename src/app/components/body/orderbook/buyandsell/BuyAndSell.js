@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
             paddingBottom: '10px',
             backgroundColor: 'rgb(32, 38, 43)',
             color: 'rgb(212, 212, 212)',
-            width: '100%'
+            width: '100%',
+            borderBottom: '1px solid rgb(0, 0, 0)',
         },
     // --- additionals --- //
         liShade: {

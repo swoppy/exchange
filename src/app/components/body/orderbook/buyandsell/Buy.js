@@ -18,6 +18,7 @@ export class Buy extends React.Component {
                         <label className={css(styles.label)}>Price :</label>
                         <div className={css(styles.inputCon)}>
                             <input className={css(styles.input)} type="number"/>
+                            <span className={css(styles.span)}>USD</span>
                         </div>
                     </div>
                     <div className={css(styles.price)}>
@@ -61,7 +62,8 @@ const styles = StyleSheet.create({
             flexDirection: 'row',
            // paddingTop: '10px',
             flex: '0 1 35px',
-            margin: '0px 0px 5px'
+            margin: '0px 0px 5px',
+            flexWrap: 'nowrap',
         },
             label: {
                 display: 'flex',
@@ -76,12 +78,16 @@ const styles = StyleSheet.create({
                 height: '100%',
                 flexBasis: '75%',
                 position: 'relative',
+                flexWrap: 'nowrap',
+                background: 'rgb(47, 56, 63)',
+                border: '1px solid rgb(64, 75, 85)',
                 
+
             },
                 input: {
                     color: 'rgb(212, 212, 212)',
                     background: 'rgb(47, 56, 63)',
-                    border: '1px solid rgb(64, 75, 85)',
+                    border: '0',
                     borderImage: 'initial',
                     padding: '4px 0px 4px 10px',
                     outline: 'none',
@@ -90,5 +96,13 @@ const styles = StyleSheet.create({
                     ':focus': {
                         borderColor: 'rgb(240, 185, 11)'
                     }
+                },
+                span: {
+                    color: 'rgb(102, 102, 102)',
+                    fontSize: '12px',
+                    position: 'absolute',
+                    right: '20px',
+                    top: '50%',
+                    transform: 'translateY(-50%)'
                 }
 });

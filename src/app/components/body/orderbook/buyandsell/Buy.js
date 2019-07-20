@@ -15,13 +15,13 @@ export class Buy extends React.Component {
                         </div>
                     </div>
                     <div className={css(styles.price)}>
-                        <label className={css(styles.label)}>Price</label>
+                        <label className={css(styles.label)}>Price :</label>
                         <div className={css(styles.inputCon)}>
                             <input className={css(styles.input)} type="number"/>
                         </div>
                     </div>
                     <div className={css(styles.price)}>
-                        <label className={css(styles.label)}>Price</label>
+                        <label className={css(styles.label)}>Amount :</label>
                         <div className={css(styles.inputCon)}>
                             <input className={css(styles.input)} type="number"/>
                         </div>
@@ -67,11 +67,14 @@ const styles = StyleSheet.create({
                 display: 'flex',
                 flexBasis: '25%',
                 height: '100%',
-                color: 'rgb(175, 175, 175)'
+                color: 'rgb(175, 175, 175)',
+                alignItems: 'center'
             },
             inputCon: {
+                display: 'flex',
                 width: '100%',
                 height: '100%',
+                flexBasis: '75%',
                 position: 'relative'
             },
                 input: {
@@ -79,7 +82,7 @@ const styles = StyleSheet.create({
                     background: 'rgb(47, 56, 63)',
                     border: '1px solid rgb(64, 75, 85)',
                     borderImage: 'initial',
-                    padding: '0px 0px 0px 10px',
+                    padding: '4px 0px 4px 10px',
                     outline: 'none',
                     //height: '200%',
                     flex: '1 1 auto'

@@ -14,11 +14,24 @@ export class Buy extends React.Component {
                             <FontAwesomeIcon icon={faWallet} />
                         </div>
                     </div>
+                    <div className={css(styles.price)}>
+                        <label className={css(styles.label)}>Price</label>
+                        <div className={css(styles.inputCon)}>
+                            <input className={css(styles.input)} type="number"/>
+                        </div>
+                    </div>
+                    <div className={css(styles.price)}>
+                        <label className={css(styles.label)}>Price</label>
+                        <div className={css(styles.inputCon)}>
+                            <input className={css(styles.input)} type="number"/>
+                        </div>
+                    </div>
                 </form>
             </div>
         )
     }
 }
+
 
 const styles = StyleSheet.create({
     buy: {
@@ -33,6 +46,8 @@ const styles = StyleSheet.create({
             display: 'flex',
             flexDirection: 'row',
             flexWrap: 'nowrap',
+            alignItems: 'center',
+            paddingBottom: '10px'
                 //border: '1px solid white'
         },
             wallet: {
@@ -40,5 +55,33 @@ const styles = StyleSheet.create({
                 alignSelf: 'center',
                 justifyContent: 'space-between',
                 marginLeft: 'auto'
-            }
+            },
+        price: {
+            display: 'flex',
+            flexDirection: 'row',
+           // paddingTop: '10px',
+            flex: '0 1 35px',
+            margin: '0px 0px 5px'
+        },
+            label: {
+                display: 'flex',
+                flexBasis: '25%',
+                height: '100%',
+                color: 'rgb(175, 175, 175)'
+            },
+            inputCon: {
+                width: '100%',
+                height: '100%',
+                position: 'relative'
+            },
+                input: {
+                    color: 'rgb(212, 212, 212)',
+                    background: 'rgb(47, 56, 63)',
+                    border: '1px solid rgb(64, 75, 85)',
+                    borderImage: 'initial',
+                    padding: '0px 0px 0px 10px',
+                    outline: 'none',
+                    //height: '200%',
+                    flex: '1 1 auto'
+                }
 });

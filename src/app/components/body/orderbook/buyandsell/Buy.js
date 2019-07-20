@@ -21,7 +21,7 @@ export class Buy extends React.Component {
                         </div>
                     </div>
                     <div className={css(styles.price)}>
-                        <label className={css(styles.label)}>Amount :</label>
+                        <label className={css(styles.label)}>Amount:</label>
                         <div className={css(styles.inputCon)}>
                             <input className={css(styles.input)} type="number"/>
                         </div>
@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
                 width: '100%',
                 height: '100%',
                 flexBasis: '75%',
-                position: 'relative'
+                position: 'relative',
+                
             },
                 input: {
                     color: 'rgb(212, 212, 212)',
@@ -85,6 +86,9 @@ const styles = StyleSheet.create({
                     padding: '4px 0px 4px 10px',
                     outline: 'none',
                     //height: '200%',
-                    flex: '1 1 auto'
+                    flex: '1 1 auto',
+                    ':focus': {
+                        borderColor: 'rgb(240, 185, 11)'
+                    }
                 }
 });

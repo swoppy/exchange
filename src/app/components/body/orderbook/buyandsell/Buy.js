@@ -27,6 +27,15 @@ export class Buy extends React.Component {
                             <input className={css(styles.input)} type="number"/>
                         </div>
                     </div>
+                    <div className={css(styles.price)}>
+                        <label className={css(styles.label)}></label>
+                        <div className={css(styles.inputConPercentages)}>
+                            <input id="OrderForm-input-Buy-25" type="button" className={css(styles.percentages)} value="25%" />
+                            <input id="OrderForm-input-Buy-25" type="button" className={css(styles.percentages)} value="50%" />
+                            <input id="OrderForm-input-Buy-25" type="button" className={css(styles.percentages)} value="75%" />
+                            <input id="OrderForm-input-Buy-25" type="button" className={css(styles.percentages)} value="100%" />
+                        </div>
+                    </div>
                 </form>
             </div>
         )
@@ -81,8 +90,6 @@ const styles = StyleSheet.create({
                 flexWrap: 'nowrap',
                 background: 'rgb(47, 56, 63)',
                 border: '1px solid rgb(64, 75, 85)',
-                
-
             },
                 input: {
                     color: 'rgb(212, 212, 212)',
@@ -104,5 +111,34 @@ const styles = StyleSheet.create({
                     right: '20px',
                     top: '50%',
                     transform: 'translateY(-50%)'
-                }
+                },
+    inputConPercentages: {
+                display: 'flex',
+                width: '100%',
+                height: '100%',
+                flexBasis: '75%',
+                position: 'relative',
+                flexWrap: 'nowrap',
+                
+                   
+    },
+    percentages: {
+        display: 'flex',
+        flex: '1',
+        height: '100%',
+        cursor: 'pointer',
+        background: 'rgb(47, 56, 63)',
+        color: 'inherit',
+        margin: '0px 3px auto auto',
+        outline: 'none',
+        border: '1px solid rgb(64, 75, 85)',
+        padding: '2px 12px 3px',
+        textAlign: 'center',
+        ':last-child': {
+            marginRight: '0px'
+        },
+        ':hover': {
+            borderColor: 'rgb(240, 185, 11)'
+        }
+    }
 });

@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
             display: 'flex',
             flexDirection: 'column',
             border: '1px solid rgb(0, 0, 0)',
-            width: '54vw',
+            width: '60vw',
             backgroundColor: 'rgb(38, 45, 51)',
         },
         chartCon: {
             display: 'flex',
             flexDirection: 'column',
             border: '1px solid rgb(0, 0, 0)',
-            flex: '8'
+            flex: '6'
         },
         historyCon: {
             display: 'flex',

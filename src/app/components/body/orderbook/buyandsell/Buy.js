@@ -7,7 +7,14 @@ export class Buy extends React.Component {
     render(){
         return (
             <div className={css(styles.buy)}>
-                <FormFields />
+                <FormFields 
+                    action="Buy"
+                    coin="BTC"
+                    className={css(styles.buttonColor)}
+                    style={{ background:  'rgb(112, 168, 0)',
+                             borderColor: 'rgb(112, 168, 0)' 
+                    }}
+                />
             </div>
         )
     }
@@ -24,5 +31,9 @@ const styles = StyleSheet.create({
         marginTop: '20px',
         marginBottom: '20px'
             
+    },
+    buttonColor: {
+        background:'rgb(112, 168, 0)',
+        borderColor: 'rgb(112, 168, 0)',
     }
 });

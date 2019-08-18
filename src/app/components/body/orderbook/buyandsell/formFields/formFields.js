@@ -8,7 +8,7 @@ export class FormFields extends React.Component {
         return (
             <form>
                 <div className={css(styles.head)}>
-                    Buy BTC
+                    {this.props.action} {this.props.coin}
                     <div className={css(styles.wallet)}>
                         <FontAwesomeIcon icon={faWallet} />
                     </div>
@@ -42,8 +42,8 @@ export class FormFields extends React.Component {
                     </div>
                 </div>
                 <div className={css(styles.buyContainer)} >
-                    <button type="button" className={css(styles.buyButton)}>
-                        BUY
+                    <button type="button" className={css(styles.buyButton)} style={this.props.style}>
+                    {this.props.action}
                     </button>
                 </div>
             </form>
@@ -169,11 +169,9 @@ const styles = StyleSheet.create({
             paddingBottom:'5px',
             textAlign: 'center',
             width: '100%',
-            background:'rgb(112, 168, 0)',
-            borderColor: 'rgb(112, 168, 0)',
             outline: 'none',
             fontSize: '14px',
             color: 'white',
             height: 'auto',
-        }
+        },
 });

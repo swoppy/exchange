@@ -10,7 +10,7 @@ export class Sell extends React.Component {
             <div className={css(styles.sell)}>
                 <form>
                     <div className={css(styles.head)}>
-                        Buy BTC
+                        Sell BTC
                         <div className={css(styles.wallet)}>
                             <FontAwesomeIcon icon={faWallet} />
                         </div>

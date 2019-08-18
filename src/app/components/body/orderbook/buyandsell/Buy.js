@@ -36,6 +36,17 @@ export class Buy extends React.Component {
                             <input id="OrderForm-input-Buy-25" type="button" className={css(styles.percentages)} value="100%" />
                         </div>
                     </div>
+                    <div className={css(styles.price)}>
+                        <label className={css(styles.label)}>Total:</label>
+                        <div className={css(styles.inputCon)}>
+                            <input className={css(styles.input)} type="number" />
+                        </div>
+                    </div>
+                    <div className={css(styles.buyContainer)} >
+                        <button type="button" className={css(styles.buyButton)}>
+                            BUY
+                        </button>
+                    </div>
                 </form>
             </div>
         )
@@ -50,6 +61,8 @@ const styles = StyleSheet.create({
         padding: '12px 22px',
         flex: '1 1 0',
         borderRight: '1px solid rgb(64, 75, 85)',
+        marginTop: '20px',
+        marginBottom: '20px'
             
     },
         head: {
@@ -73,6 +86,7 @@ const styles = StyleSheet.create({
             flex: '0 1 35px',
             margin: '0px 0px 5px',
             flexWrap: 'nowrap',
+            
         },
             label: {
                 display: 'flex',
@@ -140,5 +154,28 @@ const styles = StyleSheet.create({
         ':hover': {
             borderColor: 'rgb(240, 185, 11)'
         }
-    }
+    },
+    buyContainer: {
+        display: 'flex',
+        //flex: '0 1 34px',
+        background: 'none',
+        flexWrap: 'nowrap',
+        height: '30px',
+        marginTop: '20px',
+        width: '100%',
+        
+    },
+        buyButton: {
+            cursor: 'pointer',
+            paddingTop: '5px',
+            paddingBottom:'5px',
+            textAlign: 'center',
+            width: '100%',
+            background:'rgb(112, 168, 0)',
+            borderColor: 'rgb(112, 168, 0)',
+            outline: 'none',
+            fontSize: '14px',
+            color: 'white',
+            height: 'auto',
+        }
 });

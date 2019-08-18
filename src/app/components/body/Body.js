@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         fontSize: '1em',
         flexWrap: 'nowrap',
         width: '100%',
-        height: '94.5vh'
+        height: 'auto'
     },
         chartAndHistoryCon: {
             display: 'flex',
@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
             display: 'flex',
             border: '1px solid rgb(0, 0, 0)',
             flex: '3',
-            height: '100%'
         },
         
     

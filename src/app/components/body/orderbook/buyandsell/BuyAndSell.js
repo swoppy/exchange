@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         border: '1px solid rgb(0, 0, 0)',
-        height: '36vh'
+        height: 'auto'
     }
 });

@@ -1,21 +1,21 @@
 
 import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWallet } from '@fortawesome/free-solid-svg-icons'
+
+import { FormFields } from './formFields/formFields'
 
 export class Sell extends React.Component {
     render(){
         return (
             <div className={css(styles.sell)}>
-                <form>
-                    <div className={css(styles.head)}>
-                        Sell BTC
-                        <div className={css(styles.wallet)}>
-                            <FontAwesomeIcon icon={faWallet} />
-                        </div>
-                    </div>
-                </form>
+                <FormFields 
+                    action="Sell"
+                    coin="BTC"
+                    className={css(styles.buttonColor)}
+                    style={{ background:  'rgb(255, 0, 122)',
+                             borderColor: 'rgb(255, 0, 122)' 
+                    }}
+                />
             </div>
         )
     }
@@ -24,20 +24,12 @@ export class Sell extends React.Component {
 const styles = StyleSheet.create({
     sell: {
         display: 'flex',
-        flex: '1 1 0',
         flexDirection: 'column',
         padding: '12px 22px',
+        flex: '1 1 0',
+        borderRight: '1px solid rgb(64, 75, 85)',
+        marginTop: '20px',
+        marginBottom: '20px'
     },
-        head: {
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'nowrap',
-                    //border: '1px solid white'
-        },
-            wallet: {
-                display: 'flex',
-                alignSelf: 'center',
-                justifyContent: 'space-between',
-                marginLeft: 'auto'
-            }
+
 });

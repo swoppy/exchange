@@ -32,8 +32,4 @@ const styles = StyleSheet.create({
         marginBottom: '20px'
             
     },
-    buttonColor: {
-        background:'rgb(112, 168, 0)',
-        borderColor: 'rgb(112, 168, 0)',
-    }
 });

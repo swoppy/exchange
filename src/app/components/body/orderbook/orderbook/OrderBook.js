@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
-        width: '40vw',
+        width: 'auto',
         backgroundColor: 'rgb(38, 45, 51)',
         position: 'relative',
         height: 'auto',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         border: '1px solid rgb(0, 0, 0)',
-        width: '42vw',
+        width: '30vw',
         position: 'relative'
     }
 });

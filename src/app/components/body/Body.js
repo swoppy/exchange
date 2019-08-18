@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
             display: 'flex',
             flexDirection: 'column',
             border: '1px solid rgb(0, 0, 0)',
-            width: '60vw',
+            width: '67vw',
             backgroundColor: 'rgb(38, 45, 51)',
         },
         chartCon: {

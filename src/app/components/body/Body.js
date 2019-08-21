@@ -2,6 +2,7 @@ import React from "react"
 import { StyleSheet, css } from 'aphrodite/no-important'
 
 import { OrderBook } from './orderbook/orderbook/OrderBook'
+import  { TradeHistory } from './tradehistory/tradeHistory'
 
 export class Body extends React.Component {
     render () {
@@ -11,9 +12,7 @@ export class Body extends React.Component {
                     <div className={css(styles.chartCon)}>
                         chart
                     </div>
-                    <div className={css(styles.historyCon)}>
-                        trade history
-                    </div>
+                    <TradeHistory />
                 </div>
                 <OrderBook />
             </div>
@@ -44,11 +43,7 @@ const styles = StyleSheet.create({
             border: '1px solid rgb(0, 0, 0)',
             flex: '6'
         },
-        historyCon: {
-            display: 'flex',
-            border: '1px solid rgb(0, 0, 0)',
-            flex: '3',
-        },
+        
         
     
 });

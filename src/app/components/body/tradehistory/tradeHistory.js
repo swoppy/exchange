@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: 'rgb(47, 56, 63)',
-        color: 'rgb(245, 188, 0)',
+        color: 'white',
         cursor: 'pointer',
         lineHeight: '100%',
         fontSize: '12px',

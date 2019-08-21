@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite/no-important'
 
 export class OrderBookHeader extends React.Component {
     render(){
-        //console.log(this.props.currentOrderType);
+        let defaultStyle = document.activeElement.value;
         return (
             <div className={css(styles.orderBookHeader)}>
                 <ul className={css(styles.ul)}>
@@ -14,19 +14,19 @@ export class OrderBookHeader extends React.Component {
                                 className={css(styles.buySellLogo)}
                                 onClick={this.props.handleClick}
                                 value="BS"
+                                style={!defaultStyle ? { borderColor: 'rgb(240, 185, 11)' } : {}}
                         />
                     </li>
                     <li className={css(styles.li)}>
-                        <input id='buy'
-                            type='image'
-                            src={require('../../../../assets/img/sell.svg')}
-                            className={css(styles.buySellLogo)}
-                            onClick={this.props.handleClick}
-                            value="S"
+                        <input  type='image'
+                                src={require('../../../../assets/img/sell.svg')}
+                                className={css(styles.buySellLogo)}
+                                onClick={this.props.handleClick}
+                                value="S"
                         />
                     </li>
                     <li className={css(styles.li)}>
-                    <input type='image'
+                    <input  type='image'
                             src={require('../../../../assets/img/buy.svg')}
                             className={css(styles.buySellLogo)}
                             onClick={this.props.handleClick}
